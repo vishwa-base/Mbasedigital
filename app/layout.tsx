@@ -11,19 +11,19 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://mbasedigital.com"),
   title: {
-    default: "Mbase Digital | Search-Ready Websites and Digital Growth Systems",
+    default: "Mbase Digital | Marketing, Management and Mentorship",
     template: "%s | Mbase Digital",
   },
   description:
-    "Mbase Digital builds fast, accessible, search-ready websites, content systems, and technical marketing workflows for growth-focused businesses.",
+    "Mbase Digital builds SEO, social media, content, websites, AI automation, and digital consulting systems for growth-focused businesses.",
   applicationName: "Mbase Digital",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Mbase Digital | Search-Ready Websites and Digital Growth Systems",
+    title: "Mbase Digital | Marketing, Management and Mentorship",
     description:
-      "Professional digital strategy, SEO, content systems, website development, and automation built around speed, clarity, and discoverability.",
+      "Professional SEO, social media, content writing, website development, AI automation, and digital consulting built around measurable growth.",
     url: "https://mbasedigital.com",
     siteName: "Mbase Digital",
     images: [
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mbase Digital",
     description:
-      "Fast, accessible, search-ready websites and digital growth systems.",
+      "Marketing, management, and mentorship for digital growth.",
     images: ["/images/mbase-digital-hero.webp"],
   },
 };

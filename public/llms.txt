@@ -1,53 +1,62 @@
 # Mbase Digital
 
-Mbase Digital is a professional digital strategy, website development, SEO, AI visibility, content strategy, and automation brand.
+Mbase Digital is a digital growth brand focused on Marketing, Management and Mentorship.
 
 Positioning:
-Mbase Digital combines creativity, logic, research, and technical execution to build fast, useful, search-ready websites and content systems for growth-focused businesses.
+Mbase Digital helps brands build fast websites, sharper content, stronger SEO, social media systems, and practical automation for how buyers discover, compare, and choose today.
 
 Primary navigation:
 - Services
-- Industry
-- Blog
+- Industries
 - About Us
+- Blog
 - Contact Us
 
+Main services:
+- Search Engine Optimization
+- Social Media Marketing
+- Content Writing
+- Website Development
+- AI Automation Setup
+- Digital Marketing Consulting
+
 Success metrics:
-- 3.2x average ROI target for growth programs.
-- 50+ companies and digital teams supported.
+- 3.2x average ROI focus.
+- 50+ companies supported.
 - 12+ years of industry experience.
 
-Trusted by growing companies across the world:
+Trusted by:
 - Finology.in
 - Tokenmetrics.com
 - Leadangel.com
 - Aigenthix.com
 - Botsfolio.com
 
-Core services:
-- SEO and AI visibility: technical SEO audits, entity and schema planning, topical authority maps, and answer-ready pages.
-- High-performance websites: server-rendered Next.js development, mobile-first UX, Core Web Vitals, and conversion paths.
-- Content growth systems: service page strategy, editorial workflows, content briefs, and buyer-intent content.
-- Automation and integrations: CRM workflows, lead routing, reporting dashboards, analytics, and connected operations.
+Why choose Mbase Digital:
+- Growth systems built for execution.
+- AI-powered marketing workflows.
+- Full-funnel digital expertise.
+- Focus on ROI, not vanity metrics.
 
-Industries:
-- Finance and investing.
-- AI and automation.
-- B2B software and services.
+Growth process:
+- Audit and Quick Wins.
+- 90-Day Growth Plan.
+- Launch and Optimize.
+- Scale What Converts.
+
+Contact form:
+- The site uses one main contact and lead form.
+- Fields include name, email ID, business website, service interest, and message.
+- Primary CTA: Talk To An Expert / Request a Free Consultation.
 
 Latest blog topics:
-- Server-rendered websites for search engines and AI tools.
-- Service pages that explain value clearly and convert informed buyers.
-- Practical launch checklists for fast, accessible, growth-ready websites.
+- SEO growth for small businesses.
+- Website design mistakes that reduce conversions.
+- AI automation in modern marketing systems.
 
-Lead magnet:
-- Free digital growth audit.
-- Reviews website visibility gaps, conversion paths, technical SEO, content structure, AI-search readability, page performance, and clear next steps.
-- Form fields include name, email address, website URL, and main challenge.
-
-Website standards:
-- Server-rendered or statically generated pages for crawlable content.
-- Readable semantic HTML with logical headings and accessible navigation.
-- Optimized WebP imagery with useful alt text and disciplined file sizes.
+Technical standards:
+- Server-rendered/static Next.js pages.
+- Semantic HTML content readable by people, search engines, and LLM tools.
+- Optimized WebP media.
 - Metadata, Open Graph, robots.txt, sitemap.xml, JSON-LD, and llms.txt.
-- Responsive layouts for mobile scanning and desktop comparison.
+- Responsive layouts with accessible navigation and clear CTAs.
