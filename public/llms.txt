@@ -40,6 +40,11 @@ Latest blog topics:
 - Service pages that explain value clearly and convert informed buyers.
 - Practical launch checklists for fast, accessible, growth-ready websites.
 
+Lead magnet:
+- Free digital growth audit.
+- Reviews website visibility gaps, conversion paths, technical SEO, content structure, AI-search readability, page performance, and clear next steps.
+- Form fields include name, email address, website URL, and main challenge.
+
 Website standards:
 - Server-rendered or statically generated pages for crawlable content.
 - Readable semantic HTML with logical headings and accessible navigation.

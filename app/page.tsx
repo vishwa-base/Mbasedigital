@@ -114,6 +114,21 @@ const blogs = [
   },
 ];
 
+const auditBenefits = [
+  {
+    title: "Find visibility gaps",
+    copy: "See where technical SEO, content structure, and AI-search readability are limiting discovery.",
+  },
+  {
+    title: "Improve conversion paths",
+    copy: "Identify the sections, CTAs, and page flow issues that make serious buyers hesitate.",
+  },
+  {
+    title: "Get clear next steps",
+    copy: "Receive practical recommendations for website, content, SEO, and automation improvements.",
+  },
+];
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
@@ -366,6 +381,56 @@ export default function Home() {
                 <p>{blog.date}</p>
               </article>
             ))}
+          </div>
+        </section>
+
+        <section className="lead-magnet" aria-labelledby="audit-title">
+          <div className="section lead-magnet-inner">
+            <div className="audit-copy">
+              <p className="eyebrow">Free digital growth audit</p>
+              <h2 id="audit-title">Get a clear view of what is holding your website back.</h2>
+              <p>
+                Share your website and main growth challenge. Mbase Digital will review the core signals that affect
+                search visibility, user trust, page performance, and conversion readiness.
+              </p>
+              <div className="audit-benefits">
+                {auditBenefits.map((benefit) => (
+                  <article key={benefit.title}>
+                    <span aria-hidden="true">✓</span>
+                    <div>
+                      <h3>{benefit.title}</h3>
+                      <p>{benefit.copy}</p>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </div>
+
+            <form
+              className="audit-form"
+              action="mailto:hello@mbasedigital.com"
+              method="post"
+              encType="text/plain"
+            >
+              <h3>Claim your free website & SEO review</h3>
+              <label>
+                Name
+                <input name="name" type="text" autoComplete="name" placeholder="Your name" required />
+              </label>
+              <label>
+                Email address
+                <input name="email" type="email" autoComplete="email" placeholder="you@example.com" required />
+              </label>
+              <label>
+                Website URL
+                <input name="website" type="url" placeholder="https://example.com" required />
+              </label>
+              <label>
+                Main challenge
+                <textarea name="challenge" rows={4} placeholder="Tell us what you want to improve" />
+              </label>
+              <button className="button primary" type="submit">Start my free audit</button>
+            </form>
           </div>
         </section>
 
