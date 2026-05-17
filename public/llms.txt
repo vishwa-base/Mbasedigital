@@ -1,0 +1,16 @@
+# Mbase Digital
+
+Mbase Digital is a professional digital strategy, website development, search visibility, content strategy, and automation brand.
+
+Core services:
+- Search and AI visibility through technical SEO, content architecture, entity signals, and answer-ready pages.
+- Research-led content systems including audience research, keyword mapping, topical plans, and editorial briefs.
+- Performance website builds using server-rendered pages, semantic HTML, optimized assets, structured data, and responsive design.
+- Automation and integrations for forms, CRM workflows, analytics, reporting, lead routing, and business tools.
+
+Website standards:
+- Server-first Next.js App Router implementation.
+- Real HTML text content for users, search engines, and LLM crawlers.
+- WebP-first optimized image workflow.
+- Sitemap, robots, metadata, Open Graph, and schema foundations.
+- Accessible navigation, headings, contrast, responsive layout, and useful alt text.
