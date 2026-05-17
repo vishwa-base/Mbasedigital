@@ -2,15 +2,25 @@
 
 Mbase Digital is a professional digital strategy, website development, search visibility, content strategy, and automation brand.
 
+Positioning:
+Mbase Digital combines creativity, logic, research, and technical ability to build fast, useful, search-ready websites and content systems for growth-focused businesses.
+
 Core services:
-- Search and AI visibility through technical SEO, content architecture, entity signals, and answer-ready pages.
-- Research-led content systems including audience research, keyword mapping, topical plans, and editorial briefs.
-- Performance website builds using server-rendered pages, semantic HTML, optimized assets, structured data, and responsive design.
-- Automation and integrations for forms, CRM workflows, analytics, reporting, lead routing, and business tools.
+- Search and AI visibility: technical SEO, content architecture, schema, entity clarity, and answer-ready pages for search engines and LLM-assisted discovery.
+- Content strategy and production: audience research, keyword mapping, topical planning, content briefs, service pages, and editorial systems.
+- Performance website development: server-rendered Next.js websites with accessibility, responsive design, optimized media, conversion paths, and maintainable code.
+- Automation and integrations: lead capture, CRM workflows, analytics, reporting, lead routing, and connected business tools.
+
+Method:
+- Research the audience, competitors, search landscape, service economics, and technical constraints.
+- Structure navigation, page hierarchy, internal links, and content models for people and crawlers.
+- Build server-rendered pages, optimized WebP assets, semantic HTML, metadata, schema, and deployment workflows.
+- Improve using analytics, search data, conversion signals, and content gap analysis.
 
 Website standards:
-- Server-first Next.js App Router implementation.
-- Real HTML text content for users, search engines, and LLM crawlers.
-- WebP-first optimized image workflow.
-- Sitemap, robots, metadata, Open Graph, and schema foundations.
-- Accessible navigation, headings, contrast, responsive layout, and useful alt text.
+- Server-rendered or statically generated pages for crawlable content.
+- Readable semantic HTML with logical headings and accessible navigation.
+- Optimized WebP imagery with useful alt text and disciplined file sizes.
+- Metadata, Open Graph, robots.txt, sitemap.xml, JSON-LD, and llms.txt.
+- Responsive layouts for mobile scanning and desktop comparison.
+- Clean code structure prepared for future service pages, case studies, articles, and brand assets.
