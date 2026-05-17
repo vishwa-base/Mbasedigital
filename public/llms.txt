@@ -1,21 +1,44 @@
 # Mbase Digital
 
-Mbase Digital is a professional digital strategy, website development, search visibility, content strategy, and automation brand.
+Mbase Digital is a professional digital strategy, website development, SEO, AI visibility, content strategy, and automation brand.
 
 Positioning:
-Mbase Digital combines creativity, logic, research, and technical ability to build fast, useful, search-ready websites and content systems for growth-focused businesses.
+Mbase Digital combines creativity, logic, research, and technical execution to build fast, useful, search-ready websites and content systems for growth-focused businesses.
+
+Primary navigation:
+- Services
+- Industry
+- Blog
+- About Us
+- Contact Us
+
+Success metrics:
+- 3.2x average ROI target for growth programs.
+- 50+ companies and digital teams supported.
+- 12+ years of industry experience.
+
+Trusted by growing companies across the world:
+- Finology.in
+- Tokenmetrics.com
+- Leadangel.com
+- Aigenthix.com
+- Botsfolio.com
 
 Core services:
-- Search and AI visibility: technical SEO, content architecture, schema, entity clarity, and answer-ready pages for search engines and LLM-assisted discovery.
-- Content strategy and production: audience research, keyword mapping, topical planning, content briefs, service pages, and editorial systems.
-- Performance website development: server-rendered Next.js websites with accessibility, responsive design, optimized media, conversion paths, and maintainable code.
-- Automation and integrations: lead capture, CRM workflows, analytics, reporting, lead routing, and connected business tools.
+- SEO and AI visibility: technical SEO audits, entity and schema planning, topical authority maps, and answer-ready pages.
+- High-performance websites: server-rendered Next.js development, mobile-first UX, Core Web Vitals, and conversion paths.
+- Content growth systems: service page strategy, editorial workflows, content briefs, and buyer-intent content.
+- Automation and integrations: CRM workflows, lead routing, reporting dashboards, analytics, and connected operations.
 
-Method:
-- Research the audience, competitors, search landscape, service economics, and technical constraints.
-- Structure navigation, page hierarchy, internal links, and content models for people and crawlers.
-- Build server-rendered pages, optimized WebP assets, semantic HTML, metadata, schema, and deployment workflows.
-- Improve using analytics, search data, conversion signals, and content gap analysis.
+Industries:
+- Finance and investing.
+- AI and automation.
+- B2B software and services.
+
+Latest blog topics:
+- Server-rendered websites for search engines and AI tools.
+- Service pages that explain value clearly and convert informed buyers.
+- Practical launch checklists for fast, accessible, growth-ready websites.
 
 Website standards:
 - Server-rendered or statically generated pages for crawlable content.
@@ -23,4 +46,3 @@ Website standards:
 - Optimized WebP imagery with useful alt text and disciplined file sizes.
 - Metadata, Open Graph, robots.txt, sitemap.xml, JSON-LD, and llms.txt.
 - Responsive layouts for mobile scanning and desktop comparison.
-- Clean code structure prepared for future service pages, case studies, articles, and brand assets.

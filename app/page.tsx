@@ -1,68 +1,117 @@
 import Image from "next/image";
 
-const navItems = [
-  { label: "Services", href: "#services" },
-  { label: "Method", href: "#method" },
-  { label: "Standards", href: "#standards" },
-  { label: "Contact", href: "#contact" },
+const serviceMenu = [
+  "SEO & AI Visibility",
+  "Website Development",
+  "Content Strategy",
+  "Marketing Automation",
+  "Analytics & Reporting",
+];
+
+const industryMenu = [
+  "SaaS & Technology",
+  "Finance & Investing",
+  "B2B Services",
+  "AI & Automation",
+  "Digital Products",
 ];
 
 const services = [
   {
-    title: "Search and AI visibility",
-    copy: "Technical SEO, content architecture, schema, entity clarity, and answer-ready pages for search engines and LLM-assisted discovery.",
-    items: ["Technical audits", "Topical maps", "Schema planning"],
+    title: "SEO and AI visibility",
+    copy: "Build crawlable, structured, answer-ready pages that help buyers, search engines, and AI research tools understand your expertise.",
+    items: ["Technical SEO audits", "Entity and schema planning", "Topical authority maps"],
   },
   {
-    title: "Content strategy and production",
-    copy: "Research-led content systems that turn buyer questions, keyword demand, and service expertise into clear pages that earn attention.",
-    items: ["Content briefs", "Service pages", "Editorial systems"],
+    title: "High-performance websites",
+    copy: "Design and develop fast, server-rendered websites with strong UX, clean code, clear messaging, and measurable conversion paths.",
+    items: ["Next.js development", "Mobile-first UX", "Core Web Vitals"],
   },
   {
-    title: "Performance website development",
-    copy: "Fast, responsive, server-rendered websites designed around accessibility, conversion paths, clean code, and long-term maintainability.",
-    items: ["Next.js builds", "Core Web Vitals", "Mobile UX"],
+    title: "Content growth systems",
+    copy: "Turn research, buyer intent, and service knowledge into crisp service pages, blog systems, briefs, and conversion-focused content.",
+    items: ["Service page strategy", "Editorial workflows", "Content briefs"],
   },
   {
     title: "Automation and integrations",
-    copy: "Practical workflows that connect lead capture, CRM tools, analytics, reporting, and internal operations without fragile manual work.",
-    items: ["Lead routing", "CRM workflows", "Reporting setup"],
+    copy: "Connect lead capture, CRM workflows, reporting, analytics, and internal operations so marketing work becomes easier to scale.",
+    items: ["CRM workflows", "Lead routing", "Reporting dashboards"],
+  },
+];
+
+const metrics = [
+  { value: "3.2x", label: "Avg ROI target for growth programs" },
+  { value: "50+", label: "Companies and digital teams supported" },
+  { value: "12+", label: "Years of industry experience" },
+];
+
+const companies = [
+  "Finology.in",
+  "Tokenmetrics.com",
+  "Leadangel.com",
+  "Aigenthix.com",
+  "Botsfolio.com",
+];
+
+const industries = [
+  {
+    title: "Finance and investing",
+    copy: "Content, SEO, and conversion journeys for education, analysis, portfolio, and investing platforms.",
+  },
+  {
+    title: "AI and automation",
+    copy: "Clear positioning and technical pages for tools that need buyers to understand complex capabilities quickly.",
+  },
+  {
+    title: "B2B software and services",
+    copy: "Demand-focused websites, service pages, and content systems for teams with long sales cycles and informed buyers.",
   },
 ];
 
 const method = [
+  "Research the market, audience, competitors, search demand, and technical constraints.",
+  "Map the site structure, page purpose, navigation, content model, and conversion paths.",
+  "Build server-first pages with optimized WebP assets, semantic HTML, metadata, schema, and clean code.",
+  "Improve with analytics, search data, user feedback, content gaps, and performance checks.",
+];
+
+const reviews = [
   {
-    title: "Research",
-    copy: "Understand the audience, competitors, search landscape, service economics, and technical constraints before design decisions are made.",
+    quote:
+      "Mbase Digital brings the rare mix of strategic thinking and technical execution that growth-focused teams need.",
+    name: "Growth Lead",
+    role: "B2B technology company",
   },
   {
-    title: "Structure",
-    copy: "Shape the navigation, page hierarchy, internal links, and content model so users and crawlers can understand the site quickly.",
+    quote:
+      "The work is structured, practical, and focused on outcomes: clearer pages, cleaner systems, and better visibility.",
+    name: "Founder",
+    role: "Digital product business",
   },
   {
-    title: "Build",
-    copy: "Implement server-rendered pages, optimized WebP assets, semantic HTML, metadata, schema, and reliable deployment workflows.",
-  },
-  {
-    title: "Improve",
-    copy: "Use analytics, search data, conversion signals, and content gaps to refine the site after launch instead of treating launch as the finish line.",
+    quote:
+      "A strong partner for connecting content, search, automation, and website execution into one reliable operating system.",
+    name: "Marketing Director",
+    role: "Professional services brand",
   },
 ];
 
-const standards = [
-  "Server-rendered or statically generated pages for crawlable content",
-  "Readable semantic HTML with logical headings and accessible navigation",
-  "Optimized WebP imagery with useful alt text and disciplined file sizes",
-  "Metadata, Open Graph, robots.txt, sitemap.xml, JSON-LD, and llms.txt",
-  "Responsive layouts tested for mobile scanning and desktop comparison",
-  "Clean component structure that stays easy to revise as the brand matures",
-];
-
-const audiences = [
-  "Service businesses improving lead quality",
-  "Marketing teams that need technical execution",
-  "Founders building a credible digital presence",
-  "Consultants and agencies needing scalable content systems",
+const blogs = [
+  {
+    title: "How server-rendered websites help search engines and AI tools understand your business",
+    category: "Technical SEO",
+    date: "May 2026",
+  },
+  {
+    title: "Building service pages that explain value clearly and convert informed buyers",
+    category: "Content Strategy",
+    date: "May 2026",
+  },
+  {
+    title: "A practical checklist for fast, accessible, growth-ready website launches",
+    category: "Website Development",
+    date: "May 2026",
+  },
 ];
 
 const jsonLd = {
@@ -82,6 +131,30 @@ const jsonLd = {
   ],
 };
 
+function Dropdown({
+  label,
+  items,
+}: {
+  label: string;
+  items: string[];
+}) {
+  return (
+    <div className="nav-dropdown">
+      <button type="button" aria-haspopup="true">
+        {label}
+        <span aria-hidden="true">▾</span>
+      </button>
+      <div className="dropdown-panel" role="menu">
+        {items.map((item) => (
+          <a href={label === "Services" ? "#services" : "#industries"} key={item} role="menuitem">
+            {item}
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -96,66 +169,79 @@ export default function Home() {
             <span className="brand-name">Mbase Digital</span>
           </a>
           <nav className="nav" aria-label="Primary navigation">
-            {navItems.map((item) => (
-              <a href={item.href} key={item.href}>{item.label}</a>
-            ))}
+            <Dropdown label="Services" items={serviceMenu} />
+            <Dropdown label="Industry" items={industryMenu} />
+            <a href="#blog">Blog</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
           </nav>
-          <a className="header-cta" href="#contact">Start</a>
+          <a className="header-cta" href="#contact">Get a growth plan</a>
         </div>
       </header>
 
       <main id="top">
         <section className="hero">
           <div className="hero-copy">
-            <p className="eyebrow">Digital strategy, SEO, content, web, and automation</p>
-            <h1>Growth-ready websites built with research, creativity, and technical discipline.</h1>
+            <p className="eyebrow">Digital growth, SEO, AI visibility, websites, and automation</p>
+            <h1>Turn your website into a clear, fast, search-ready growth system.</h1>
             <p className="hero-lede">
-              Mbase Digital helps businesses turn expertise into fast, useful, search-ready websites and content
-              systems that are easy for people, Google, and AI research tools to understand.
+              Mbase Digital combines creativity, logic, research, and technical execution to build professional
+              websites, content systems, and digital workflows that help serious buyers find, understand, and trust you.
             </p>
             <div className="hero-actions" aria-label="Primary actions">
-              <a className="button primary" href="#contact">Plan a project</a>
-              <a className="button secondary" href="#services">View services</a>
+              <a className="button primary" href="#contact">Get my free growth plan</a>
+              <a className="button secondary" href="#services">Explore services</a>
             </div>
           </div>
 
           <div className="hero-visual">
             <Image
               src="/images/mbase-digital-hero.webp"
-              alt="Clean digital strategy workspace showing analytics, content research, and technical planning"
+              alt="Professional digital strategy workspace showing analytics, research, interface planning, and technical execution"
               width={1600}
               height={900}
               priority
               sizes="(max-width: 980px) 100vw, 46vw"
             />
             <div className="hero-strip" aria-label="Core website priorities">
-              <span>SSR pages</span>
-              <span>WebP media</span>
+              <span>Server-rendered</span>
+              <span>WebP optimized</span>
               <span>Schema-ready</span>
             </div>
           </div>
         </section>
 
-        <section className="section trust-strip" aria-label="Core strengths">
-          <p>Research-led</p>
-          <p>Technically sound</p>
-          <p>Search accessible</p>
-          <p>Mobile responsive</p>
+        <section className="section metrics-section" aria-label="Success metrics">
+          {metrics.map((metric) => (
+            <div className="metric-card" key={metric.value}>
+              <strong>{metric.value}</strong>
+              <span>{metric.label}</span>
+            </div>
+          ))}
         </section>
 
-        <section className="section intro" aria-labelledby="intro-title">
+        <section className="section logo-section" aria-labelledby="logos-title">
+          <p id="logos-title">Trusted by growing companies across the world</p>
+          <div className="company-logos" aria-label="Trusted company logos">
+            {companies.map((company) => (
+              <span key={company}>{company}</span>
+            ))}
+          </div>
+        </section>
+
+        <section className="section intro" id="about" aria-labelledby="about-title">
           <div>
-            <p className="eyebrow">Positioning</p>
-            <h2 id="intro-title">A practical partner for brands that need strategy and execution connected.</h2>
+            <p className="eyebrow">About Mbase Digital</p>
+            <h2 id="about-title">A practical growth partner for teams that need strategy and implementation together.</h2>
           </div>
           <div className="intro-copy">
             <p>
-              The site is designed around a simple business promise: combine creative thinking, logical structure,
-              research depth, and technical ability into digital assets that are useful from the first visit.
+              Many websites look polished but fail at the basics: unclear messaging, weak technical SEO, slow pages,
+              thin content, and disconnected workflows. Mbase Digital fixes those foundations first.
             </p>
             <p>
-              Every major message is real text, every section has a clear purpose, and the codebase is prepared for
-              future service pages, case studies, articles, and brand assets once the final identity is approved.
+              The work is built around useful content, clean structure, measurable outcomes, and reliable execution so
+              the website can support search visibility, buyer confidence, and long-term growth.
             </p>
           </div>
         </section>
@@ -163,10 +249,10 @@ export default function Home() {
         <section className="section" id="services" aria-labelledby="services-title">
           <div className="section-heading">
             <p className="eyebrow">Services</p>
-            <h2 id="services-title">Focused services for visibility, credibility, and conversion.</h2>
+            <h2 id="services-title">Growth services designed around visibility, trust, and conversion.</h2>
             <p>
-              Mbase Digital is structured for businesses that want a clean website, stronger search presence, sharper
-              content, and connected marketing operations without unnecessary complexity.
+              Each service connects research, content, design, and engineering so the website is not just present
+              online; it becomes easier to discover, easier to understand, and easier to act on.
             </p>
           </div>
           <div className="service-grid">
@@ -184,60 +270,112 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="method-band" id="method" aria-labelledby="method-title">
+        <section className="interactive-band" aria-labelledby="interactive-title">
+          <div className="section interactive-inner">
+            <div>
+              <p className="eyebrow">How growth compounds</p>
+              <h2 id="interactive-title">One system connects content, search, website performance, and operations.</h2>
+            </div>
+            <div className="growth-system" aria-label="Mbase Digital growth system">
+              <span>Research</span>
+              <span>Content</span>
+              <span>SEO</span>
+              <span>Website</span>
+              <span>Automation</span>
+              <span>Reporting</span>
+            </div>
+          </div>
+        </section>
+
+        <section className="section" id="industries" aria-labelledby="industries-title">
+          <div className="section-heading">
+            <p className="eyebrow">Industries</p>
+            <h2 id="industries-title">Built for technical, content-heavy, and trust-driven businesses.</h2>
+          </div>
+          <div className="industry-grid">
+            {industries.map((industry) => (
+              <article className="industry-card" key={industry.title}>
+                <h3>{industry.title}</h3>
+                <p>{industry.copy}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="method-band" aria-labelledby="method-title">
           <div className="section method-inner">
             <div className="section-heading">
               <p className="eyebrow">Method</p>
-              <h2 id="method-title">A repeatable workflow that keeps design, content, and engineering aligned.</h2>
+              <h2 id="method-title">A repeatable process from research to measurable improvement.</h2>
             </div>
             <ol className="method-list">
               {method.map((step, index) => (
-                <li key={step.title}>
+                <li key={step}>
                   <span>{String(index + 1).padStart(2, "0")}</span>
-                  <h3>{step.title}</h3>
-                  <p>{step.copy}</p>
+                  <p>{step}</p>
                 </li>
               ))}
             </ol>
           </div>
         </section>
 
-        <section className="section split-section" aria-labelledby="audience-title">
-          <div>
-            <p className="eyebrow">Who it serves</p>
-            <h2 id="audience-title">Built for teams that care about quality traffic, clear messaging, and reliable systems.</h2>
+        <section className="section reviews-section" aria-labelledby="reviews-title">
+          <div className="section-heading">
+            <p className="eyebrow">Client reviews</p>
+            <h2 id="reviews-title">Trusted for practical thinking, clear execution, and reliable growth foundations.</h2>
           </div>
-          <ul className="audience-list">
-            {audiences.map((audience) => (
-              <li key={audience}>{audience}</li>
+          <div className="review-grid">
+            {reviews.map((review) => (
+              <article className="review-card" key={review.quote}>
+                <p>“{review.quote}”</p>
+                <strong>{review.name}</strong>
+                <span>{review.role}</span>
+              </article>
             ))}
-          </ul>
+          </div>
         </section>
 
-        <section className="section standards" id="standards" aria-labelledby="standards-title">
+        <section className="section standards" aria-labelledby="standards-title">
           <div className="standards-copy">
             <p className="eyebrow">Build standards</p>
-            <h2 id="standards-title">Fast, readable, accessible, and prepared for organic discovery.</h2>
+            <h2 id="standards-title">Fast, accessible, optimized, and readable by search engines and LLMs.</h2>
             <p>
-              The implementation favors server-first rendering, clean HTML, optimized media, and durable site
-              foundations. Client-side code is reserved for interactions that genuinely improve the experience.
+              Pages are planned around server-rendered content, semantic headings, compressed WebP assets, useful alt
+              text, structured data, sitemap, robots.txt, and llms.txt.
             </p>
           </div>
-          <ul className="proof-list">
-            {standards.map((standard) => (
-              <li key={standard}>{standard}</li>
+          <div className="standards-panel">
+            <strong>Performance-first foundations</strong>
+            <span>SSR/static rendering</span>
+            <span>Responsive layouts</span>
+            <span>SEO metadata</span>
+            <span>Accessible navigation</span>
+          </div>
+        </section>
+
+        <section className="section blog-section" id="blog" aria-labelledby="blog-title">
+          <div className="section-heading compact-heading">
+            <p className="eyebrow">Latest published blogs</p>
+            <h2 id="blog-title">Insights for better websites, content, search, and growth systems.</h2>
+          </div>
+          <div className="blog-grid">
+            {blogs.map((blog) => (
+              <article className="blog-card" key={blog.title}>
+                <span>{blog.category}</span>
+                <h3>{blog.title}</h3>
+                <p>{blog.date}</p>
+              </article>
             ))}
-          </ul>
+          </div>
         </section>
 
         <section className="section contact" id="contact" aria-labelledby="contact-title">
           <div>
-            <p className="eyebrow">Next step</p>
-            <h2 id="contact-title">Ready for logo references, service expansion, and launch polish.</h2>
+            <p className="eyebrow">Contact Us</p>
+            <h2 id="contact-title">Ready to build a sharper digital growth foundation?</h2>
             <p>
-              The current build uses a temporary brand mark so development can continue. Once the final logo direction
-              is chosen, the header, favicon, social preview, colors, and supporting brand assets can be refined as one
-              connected system.
+              Share your goals, current website, competitors, and priority services. Mbase Digital can turn that into
+              a practical plan for site structure, content, SEO, development, and automation.
             </p>
           </div>
           <div className="contact-panel">
@@ -254,12 +392,14 @@ export default function Home() {
               <span className="brand-mark" aria-hidden="true">M</span>
               <span className="brand-name">Mbase Digital</span>
             </a>
-            <p>Digital strategy, search-ready websites, content systems, and technical marketing workflows.</p>
+            <p>Digital strategy, SEO, AI visibility, high-performance websites, content systems, and automation.</p>
           </div>
           <nav aria-label="Footer navigation">
-            {navItems.map((item) => (
-              <a href={item.href} key={item.href}>{item.label}</a>
-            ))}
+            <a href="#services">Services</a>
+            <a href="#industries">Industry</a>
+            <a href="#blog">Blog</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
           </nav>
         </div>
       </footer>
